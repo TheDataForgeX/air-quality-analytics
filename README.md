@@ -12,7 +12,7 @@ An end-to-end Machine Learning project that analyzes air quality data, explores 
 
 Experience the interactive AQI Prediction Dashboard:
 
-[🚀 Launch Air Quality Analytics App](https://chauhannikil494-star-air-quality-analytics-app-gl4o6q.streamlit.app/)
+[🚀 Launch Air Quality Analytics App](https://https://thedataforgex-air-quality.streamlit.app/
 
 ## 📌 Project Overview
 
