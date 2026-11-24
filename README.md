@@ -126,5 +126,5 @@ AQI Prediction
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd Air_Quality_Analytics
+git clone https://github.com/TheDataForgeX/air-quality-analytics.git
+cd air-quality-analytics
