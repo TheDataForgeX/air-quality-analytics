@@ -1,18 +1,35 @@
 # 🌍 Air Quality Analytics & AQI Prediction
 
-A machine learning project that analyzes air quality data and predicts the Air Quality Index (AQI) using pollutant measurements.
+An end-to-end Machine Learning project that analyzes air quality data, explores pollution patterns, and predicts the Air Quality Index (AQI) using pollutant measurements.
+
+<p align="center">
+
+  **Transforming Air Quality Data into Meaningful Insights**
+
+</p>
+
+## 🌐 Live Demo
+
+Experience the interactive AQI Prediction Dashboard:
+
+[🚀 Launch Air Quality Analytics App](https://chauhannikil494-star-air-quality-analytics-app-gl4o6q.streamlit.app/)
 
 ## 📌 Project Overview
 
 This project performs Exploratory Data Analysis (EDA) on air quality data and builds machine learning models to predict AQI.
 
-A Random Forest Regression model was selected as the final model because it performed better than Linear Regression on the test dataset.
+Two regression algorithms are evaluated:
 
-The trained model is integrated with a Streamlit web application where users can enter pollutant measurements and get an AQI prediction along with the corresponding AQI category and health recommendation.
+- Linear Regression
+- Random Forest Regression
+
+Random Forest Regression was selected as the final model because it achieved better performance on the test dataset.
+
+The trained model is integrated with a Streamlit web application where users can enter pollutant measurements and receive AQI predictions, AQI categories, and health recommendations.
 
 ## 🚀 Features
 
-- Exploratory Data Analysis of air quality data
+- Exploratory Data Analysis (EDA)
 - City-wise AQI analysis
 - Monthly and yearly AQI trends
 - Seasonal AQI analysis
@@ -26,48 +43,59 @@ The trained model is integrated with a Streamlit web application where users can
 - Residual analysis
 - AQI prediction using new pollutant values
 - Interactive Streamlit dashboard
-- AQI category and health recommendations
-- Deployed as a live Streamlit application
+- AQI category classification
+- Health recommendations
+- Live Streamlit deployment
 
 ## 🧪 Pollutants Used
 
-The machine learning model uses the following pollutant features:
+The machine learning model uses 12 pollutant features:
 
-- PM2.5
-- PM10
-- NO
-- NO2
-- NOx
-- NH3
-- CO
-- SO2
-- O3
-- Benzene
-- Toluene
-- Xylene
+| No. | Pollutant |
+|---:|---|
+| 1 | PM2.5 |
+| 2 | PM10 |
+| 3 | NO |
+| 4 | NO2 |
+| 5 | NOx |
+| 6 | NH3 |
+| 7 | CO |
+| 8 | SO2 |
+| 9 | O3 |
+| 10 | Benzene |
+| 11 | Toluene |
+| 12 | Xylene |
 
 ## 🤖 Machine Learning Models
 
-### Linear Regression
+Two regression algorithms were implemented and evaluated.
 
-- MAE: 31.17
-- RMSE: 59.45
-- R² Score: 0.807
+### 1. Linear Regression
 
-### Random Forest Regression
+A baseline regression model used to predict AQI from pollutant measurements.
 
-- MAE: 20.83
-- RMSE: 40.84
-- R² Score: 0.909
+### 2. Random Forest Regression
 
-Random Forest Regression was selected as the final model because it achieved lower MAE and RMSE and a higher R² score.
+An ensemble learning algorithm selected as the final prediction model because of its better evaluation results.
 
 ## 📊 Model Performance
+
+The following metrics were obtained during model evaluation:
 
 | Model | MAE | RMSE | R² Score |
 |---|---:|---:|---:|
 | Linear Regression | 31.17 | 59.45 | 0.807 |
-| Random Forest | 20.83 | 40.84 | 0.909 |
+| Random Forest Regression | 20.83 | 40.84 | 0.909 |
+
+### Best Performing Model
+
+**Random Forest Regression**
+
+- Lower Mean Absolute Error (MAE)
+- Lower Root Mean Squared Error (RMSE)
+- Higher R² Score
+
+The Random Forest model achieved an R² score of **0.909** on the test dataset.
 
 ## 🔍 Important Features
 
@@ -83,15 +111,15 @@ Feature importance represents the model's contribution from each feature and sho
 
 ## 🖥️ Streamlit Dashboard
 
-The Streamlit application allows users to:
+The interactive dashboard allows users to:
 
 1. Enter pollutant measurements.
 2. Predict AQI using the trained Random Forest model.
 3. View the predicted AQI.
 4. View the AQI category.
-5. See a health recommendation.
+5. Get health recommendations.
 6. View an AQI level indicator.
-7. Review the entered pollutant values.
+7. Review entered pollutant values.
 
 ## 🔄 Project Workflow
 
@@ -121,10 +149,82 @@ Model Saving
 Streamlit Dashboard
         ↓
 AQI Prediction
+```
+
+## 🛠️ Technologies Used
+
+| Category | Technologies |
+|---|---|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Model Saving | Joblib |
+| Web Application | Streamlit |
+| Development Environment | Jupyter Notebook |
+| Version Control | Git & GitHub |
+
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/TheDataForgeX/air-quality-analytics.git
+```
+
+### 2. Navigate to Project Directory
+
+```bash
 cd air-quality-analytics
+```
+
+### 3. Create Virtual Environment (Optional)
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate Virtual Environment
+
+**Windows:**
+
+```powershell
+.venv\Scripts\activate
+```
+
+### 5. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 6. Run Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## 📁 Project Structure
+
+```text
+air-quality-analytics/
+│
+├── Air_Quality_Analytics.ipynb
+├── Project_Interview_Questions.ipynb
+├── app.py
+├── app_backup.py
+├── city_day.csv
+├── random_forest_aqi_model.pkl
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .gitattributes
+```
+
+## 🎯 Project Objectives
+
+- Analyze air pollution patterns across different cities.
+- Understand the relationship between pollutants and AQI.
+- Apply
