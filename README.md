@@ -12,8 +12,7 @@ An end-to-end Machine Learning project that analyzes air quality data, explores 
 
 Experience the interactive AQI Prediction Dashboard:
 
-[🚀 Launch Air Quality Analytics App](https://https://thedataforgex-air-quality.streamlit.app/
-
+[🚀 Launch Air Quality Analytics App](https://thedataforgex-air-quality.streamlit.app/)
 ## 📌 Project Overview
 
 This project performs Exploratory Data Analysis (EDA) on air quality data and develops machine learning models to predict AQI.
