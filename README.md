@@ -16,7 +16,7 @@ Experience the interactive AQI Prediction Dashboard:
 
 ## 📌 Project Overview
 
-This project performs Exploratory Data Analysis (EDA) on air quality data and builds machine learning models to predict AQI.
+This project performs Exploratory Data Analysis (EDA) on air quality data and develops machine learning models to predict AQI.
 
 Two regression algorithms are evaluated:
 
@@ -27,15 +27,14 @@ Random Forest Regression was selected as the final model because it achieved bet
 
 The trained model is integrated with a Streamlit web application where users can enter pollutant measurements and receive AQI predictions, AQI categories, and health recommendations.
 
-## 🚀 Features
+## 🚀 Key Features
 
 - Exploratory Data Analysis (EDA)
 - City-wise AQI analysis
 - Monthly and yearly AQI trends
 - Seasonal AQI analysis
 - Pollutant correlation analysis
-- AQI distribution analysis
-- AQI category analysis
+- AQI distribution and category analysis
 - Linear Regression model
 - Random Forest Regression model
 - Model performance comparison
@@ -43,8 +42,7 @@ The trained model is integrated with a Streamlit web application where users can
 - Residual analysis
 - AQI prediction using new pollutant values
 - Interactive Streamlit dashboard
-- AQI category classification
-- Health recommendations
+- AQI category and health recommendations
 - Live Streamlit deployment
 
 ## 🧪 Pollutants Used
@@ -68,11 +66,9 @@ The machine learning model uses 12 pollutant features:
 
 ## 🤖 Machine Learning Models
 
-Two regression algorithms were implemented and evaluated.
-
 ### 1. Linear Regression
 
-A baseline regression model used to predict AQI from pollutant measurements.
+A baseline regression algorithm used to predict AQI from pollutant measurements.
 
 ### 2. Random Forest Regression
 
@@ -80,7 +76,7 @@ An ensemble learning algorithm selected as the final prediction model because of
 
 ## 📊 Model Performance
 
-The following metrics were obtained during model evaluation:
+The following evaluation metrics were obtained on the test dataset:
 
 | Model | MAE | RMSE | R² Score |
 |---|---:|---:|---:|
@@ -95,7 +91,7 @@ The following metrics were obtained during model evaluation:
 - Lower Root Mean Squared Error (RMSE)
 - Higher R² Score
 
-The Random Forest model achieved an R² score of **0.909** on the test dataset.
+The Random Forest model achieved an R² score of **0.909**.
 
 ## 🔍 Important Features
 
@@ -169,62 +165,4 @@ AQI Prediction
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/TheDataForgeX/air-quality-analytics.git
-```
-
-### 2. Navigate to Project Directory
-
-```bash
-cd air-quality-analytics
-```
-
-### 3. Create Virtual Environment (Optional)
-
-```bash
-python -m venv .venv
-```
-
-### 4. Activate Virtual Environment
-
-**Windows:**
-
-```powershell
-.venv\Scripts\activate
-```
-
-### 5. Install Dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 6. Run Streamlit Application
-
-```bash
-streamlit run app.py
-```
-
-The application will open in your browser.
-
-## 📁 Project Structure
-
-```text
-air-quality-analytics/
-│
-├── Air_Quality_Analytics.ipynb
-├── Project_Interview_Questions.ipynb
-├── app.py
-├── app_backup.py
-├── city_day.csv
-├── random_forest_aqi_model.pkl
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── .gitattributes
-```
-
-## 🎯 Project Objectives
-
-- Analyze air pollution patterns across different cities.
-- Understand the relationship between pollutants and AQI.
-- Apply
+git
