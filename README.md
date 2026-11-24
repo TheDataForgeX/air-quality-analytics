@@ -4,7 +4,7 @@ An end-to-end Machine Learning project that analyzes air quality data, explores 
 
 <p align="center">
 
-  **Transforming Air Quality Data into Meaningful Insights**
+**Transforming Air Quality Data into Meaningful Insights**
 
 </p>
 
@@ -165,4 +165,83 @@ AQI Prediction
 ### 1. Clone the Repository
 
 ```bash
-git
+git clone https://github.com/TheDataForgeX/air-quality-analytics.git
+```
+
+### 2. Navigate to Project Directory
+
+```bash
+cd air-quality-analytics
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate Virtual Environment
+
+**Windows PowerShell:**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+### 5. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 6. Run Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your web browser.
+
+## 📁 Project Structure
+
+```text
+air-quality-analytics/
+│
+├── Air_Quality_Analytics.ipynb
+├── Project_Interview_Questions.ipynb
+├── app.py
+├── app_backup.py
+├── city_day.csv
+├── random_forest_aqi_model.pkl
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .gitattributes
+```
+
+## 🎯 Project Objectives
+
+- Analyze air pollution patterns across different cities.
+- Understand relationships between pollutants and AQI.
+- Apply machine learning regression techniques.
+- Compare model performance using evaluation metrics.
+- Build an interactive AQI prediction application.
+- Provide health recommendations based on predicted AQI.
+
+## 👨‍💻 Author
+
+**TheDataForgeX**
+
+GitHub: [@TheDataForgeX](https://github.com/TheDataForgeX)
+
+Project Repository: [Air Quality Analytics](https://github.com/TheDataForgeX/air-quality-analytics)
+
+---
+
+<p align="center">
+
+**🌍 Air Quality Analytics & AQI Prediction**
+
+*Turning Data into Insights, Building Intelligence with Machine Learning.*
+
+</p>
